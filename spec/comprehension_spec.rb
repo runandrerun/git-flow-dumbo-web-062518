@@ -38,14 +38,14 @@ describe "GIT" do
   it "6. From the feature branch 'add-links', what is the syntax for creating a 
       remote add-links branch with all of the local branch's content? 
       (remote is still called 'origin')" do
-    answer = "git push origin "
+    answer = "git push origin add-links"
     encoded_answer = "07476403b56e1437e855a5d7031b3abc0b97de5a"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "7. From the master branch, what is the syntax for pushing the master branch to the 
       # remote master branch where the remote is called 'upstream'?" do
-    answer = "?"
+    answer = "git push origin master upstream"
     encoded_answer = "46e78005226efc7d1be2b4f9f26bcbdba2bf286d"
     expect(encode(answer)).to eq(encoded_answer)
   end
